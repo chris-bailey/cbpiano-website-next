@@ -6,6 +6,23 @@ For comparison, the original website's code is [shown here in basic HTML/CSS](ht
 
 Next.js is a powerful React framework that provides built-in support for server-side rendering (SSR), static site generation (SSG), and more.
 
+## Technologies
+
+### Frameworks and Libraries
+- **Next.js 14**
+- **React.js**
+
+### Languages
+- **TypeScript**
+- **JavaScript**
+- **HTML**
+- **CSS**
+- **Sassy CSS (Sass)**
+
+### Platform and Tools
+- **Node.js**
+- **Vercel**
+
 ## Next.js - Key Features
 - **Enhanced React**: Next.js elevates React with advanced features.
 - **Optimized Performance**: Increases speed and responsiveness of web applications.
@@ -32,8 +49,10 @@ npm run dev
 ## Production
 There are multiple ways to deploy a Next.js application. Thankfully, Next.js has great [deployment documentation](https://nextjs.org/docs/deployment).
 
+This project has been deployed on Vercel's free Hobby tier.
+
 ### Vercel
-This project is hosted within the free Hobby tier on Vercel. Follow these steps to deploy your Next.js project to Vercel:
+Follow these steps to deploy your Next.js project to Vercel:
 
 1. **Connect to Vercel**:
    - Sign in to your Vercel account.
