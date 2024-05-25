@@ -58,21 +58,16 @@ Follow these steps to deploy your Next.js project to Vercel:
    - Sign in to your Vercel account.
    - Create a new project by importing your GitHub repository.
 
-2. **Set Environment Variables for Google Analytics**:
-   - In the Vercel dashboard, go to your project settings.
-   - Navigate to the "Environment Variables" section.
+2. **Set Environment Variables**:
+   - While configuring the imported project, within the **Environment Variables** section:
    - Add the environment variable `NEXT_PUBLIC_MEASUREMENT_ID` to use Google Analytics.
 
-3. **Deploy the Project**:
-   - Vercel will automatically build and deploy your project after you connect the repository.
-   - You can monitor the deployment process in the Vercel dashboard.
-
-4. **Update DNS Records**:
-   - After the deployment is complete, you need to update the DNS records for your domain.
+3. **Update DNS Records**:
+   - After the deployment is complete, you will need to update the DNS records for your domain.
    - Go to your domain registrar's website and update the DNS settings to point to Vercel's servers.
    - Follow the instructions provided by Vercel to configure the DNS records correctly.
 
-5. **Verify Deployment**:
+4. **Verify Deployment**:
    - Once the DNS changes propagate, your website will be live on your custom domain.
    - Visit your domain to verify that the deployment was successful and everything is working as expected.
 
