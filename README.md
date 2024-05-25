@@ -1,36 +1,65 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Chris Bailey - New Age Piano Website (on Next.js)
+## Overview
+This repository contains the source code for my [New Age Piano Website](https://chrisbaileypiano.com/) currently running on Vercel, which was ported from React.js to **Next.js 14**.
 
-## Getting Started
+For comparison, the original website's code is [shown here in basic HTML/CSS](https://github.com/chris-bailey/cbpiano-website-html). It was then [ported to React](https://github.com/chris-bailey/cbpiano-website-react), before being finally ported to Next.js.
 
-First, run the development server:
+Next.js is a powerful React framework that provides built-in support for server-side rendering (SSR), static site generation (SSG), and more.
+
+## Next.js - Key Features
+- **Enhanced React**: Next.js elevates React with advanced features.
+- **Optimized Performance**: Increases speed and responsiveness of web applications.
+- **SEO-Friendly SSR**: Server-side rendering of the first page served for better SEO scores.
+- **Static Site Generation**: Easily create static, SEO-optimized sites.
+- **Modern Development Tools**: Incorporates cutting-edge tools for web development. It has such a great debugging environment!
+
+## Prerequisites
+[Node.js 18.17](https://nodejs.org/en) or later.
+
+
+## Installing Dependencies
+```bash
+npm install
+```
+
+## Development Server
+Start the development server on `http://localhost:3000`:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Production
+There are multiple ways to deploy a Next.js application. Thankfully, Next.js has great [deployment documentation](https://nextjs.org/docs/deployment).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Vercel
+This project is hosted within the free Hobby tier on Vercel. Follow these steps to deploy your Next.js project to Vercel:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1. **Connect to Vercel**:
+   - Sign in to your Vercel account.
+   - Create a new project by importing your GitHub repository.
 
-## Learn More
+2. **Set Environment Variables for Google Analytics**:
+   - In the Vercel dashboard, go to your project settings.
+   - Navigate to the "Environment Variables" section.
+   - Add the environment variable `NEXT_PUBLIC_MEASUREMENT_ID` to use Google Analytics.
 
-To learn more about Next.js, take a look at the following resources:
+3. **Deploy the Project**:
+   - Vercel will automatically build and deploy your project after you connect the repository.
+   - You can monitor the deployment process in the Vercel dashboard.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+4. **Update DNS Records**:
+   - After the deployment is complete, you need to update the DNS records for your domain.
+   - Go to your domain registrar's website and update the DNS settings to point to Vercel's servers.
+   - Follow the instructions provided by Vercel to configure the DNS records correctly.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+5. **Verify Deployment**:
+   - Once the DNS changes propagate, your website will be live on your custom domain.
+   - Visit your domain to verify that the deployment was successful and everything is working as expected.
 
-## Deploy on Vercel
+### Universal Rendering
+With this type of deployment, your website will be running on Node.js. When a user or a web crawler hits your website, the server will **quickly generate the first HTML page** and send it in the response.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This fast server-side rendering (SSR) of the initial content makes the Google crawler happy, which gives a boost to the website's SEO ranking; and it is also highly performant for users on less powerful devices.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+After this initial page is sent, the rest of the data is downloaded in the background. This step is called **hydration** as the page fills with all of the data it needs to convert into a **React Single Page Application** (SPA).
