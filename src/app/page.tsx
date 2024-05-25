@@ -21,8 +21,8 @@ export default function Page() {
         ></iframe>
       </div>
 
-      <p>In this day and age it's difficult to remember to stop and smell the roses. When I feel like I'm losing touch with
-        what's important, I sit down at the piano and I watch to see what happens. Everything that I'm feeling flows through
+      <p>In this day and age it&apos;s difficult to remember to stop and smell the roses. When I feel like I&apos;m losing touch with
+        what&apos;s important, I sit down at the piano and I watch to see what happens. Everything that I&apos;m feeling flows through
         me into the piano and music is created.</p>
 
       <p>While composing I am in a place without time or mind. If I allow myself to think too much then the whole process

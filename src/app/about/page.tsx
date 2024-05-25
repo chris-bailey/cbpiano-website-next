@@ -21,11 +21,11 @@ export default function Page() {
             </div>
 
             <p>I was born in Ontario, Canada where I started playing piano when I was just four years old. I started out by
-                playing classical music in every one of my lessons, but it couldn't hold my full attention.</p>
+                playing classical music in every one of my lessons, but it couldn&apos;t hold my full attention.</p>
 
             <p>I tried out a couple of different teachers before I found the incredibly talented Francis Rose. We made a deal
                 where I agreed to play classical music if he also taught me how to play the popular songs I was passionate
-                about. Among my favourites were "The Pink Panther" and "Great Balls of Fire" which I was very excited to play at
+                about. Among my favourites were &quot;The Pink Panther&quot; and &quot;Great Balls of Fire&quot; which I was very excited to play at
                 school talent shows. Thanks to the teaching style and expertise of Francis Rose, by the time I was 14 I was
                 playing classical music at the highest levels. This inspired me to search out a new challenge, and I started
                 learning how to compose music.</p>

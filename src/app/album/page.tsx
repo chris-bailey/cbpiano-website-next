@@ -1,4 +1,5 @@
 import { Metadata } from 'next'
+import Image from 'next/image';
 import styles from './album.module.scss';
 
 export const metadata: Metadata = {
@@ -12,11 +13,17 @@ export default function Page() {
 
             <div className={styles.topContent}>
                 <div className={styles.leftTop}>
-                    <img className={styles.aboutImage} src="/assets/images/cd-cover.jpg" alt="I Will Always Remember - CD Cover Art" width="165" height="165" />
+                    <Image
+                        className={styles.aboutImage}
+                        src="/assets/images/cd-cover.jpg"
+                        alt="I Will Always Remember - CD Cover Art"
+                        width={165}
+                        height={165}
+                    />
                 </div>
                 <div className={styles.rightTop}>
                     <p>
-                        This album is dedicated to my late father John W. Bailey who always sat in the living room and listened to me play piano. Each evening after work, he would listen to me play while reading books on history and philosophy. He sat about 15 feet away from the piano for the first 17 years of my life. When I said that I didn't know how to compose he hummed a few notes of a song that he made up in his head. After those first few notes I was off to the races. Thanks Dad!
+                        This album is dedicated to my late father John W. Bailey who always sat in the living room and listened to me play piano. Each evening after work, he would listen to me play while reading books on history and philosophy. He sat about 15 feet away from the piano for the first 17 years of my life. When I said that I didn&apos;t know how to compose he hummed a few notes of a song that he made up in his head. After those first few notes I was off to the races. Thanks Dad!
                     </p>
                     <p>
                         My most heartfelt thanks to the most wonderful wife anyone could ever ask for. My wife Dobrija is the most incredible person I have ever or will ever meet.
