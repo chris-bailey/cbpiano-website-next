@@ -1,0 +1,21 @@
+.footer {
+    text-align: center;
+    font-size: 90%;
+    font-family: sans-serif;
+    margin-bottom: 10px;
+    margin-top: 6px;
+
+    hr {
+        margin: 0;
+    }
+}
+
+.footerLeft {
+    float: left;
+    margin: 0 0 0 99px;
+}
+
+.footerRight {
+    float: right;
+    margin: 12px 100px 0 0;
+}

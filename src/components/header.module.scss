@@ -1,0 +1,44 @@
+.banner {
+    background: url("/assets/images/banner.jpg") no-repeat;
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 760px;
+    height: 151px;
+}
+
+.topMenu {
+    font-size: 120%;
+    font-weight: bold;
+    margin-top: 7px;
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: inline;
+
+        li {
+            margin: 0;
+            padding: 0;
+            display: inline;
+            text-align: center;
+            list-style: none;
+
+            a {
+                color: #FFF;
+                padding: 8px 52px;
+                text-decoration: none;
+                display: inline;
+
+                &:hover {
+                    color: #888;
+                }
+
+                &.active {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
