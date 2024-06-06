@@ -1,6 +1,6 @@
 # Chris Bailey - New Age Piano Website (on Next.js)
 ## Overview
-This repository contains the source code for my [New Age Piano Website](https://chrisbaileypiano.com/) currently running on Vercel, which was ported from React.js to **Next.js 14**.
+This repository contains the source code for my [New Age Piano Website](https://chrisbaileypiano.com/) currently running on **Vercel**, which was ported from **vanilla React.js to Next.js 14**.
 
 For comparison, the original website's code is [shown here in basic HTML/CSS](https://github.com/chris-bailey/cbpiano-website-html). It was then [ported to React](https://github.com/chris-bailey/cbpiano-website-react), before being finally ported to Next.js.
 
