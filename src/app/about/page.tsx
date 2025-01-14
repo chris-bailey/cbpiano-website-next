@@ -13,10 +13,10 @@ export default function Page() {
 
             <div className={styles.imageContainer}>
                 <Image
-                    src="/assets/images/Dobrija-and-I.jpg"
-                    width={220}
-                    height={173}
-                    alt="My wife Dobrija & myself"
+                    src="/assets/images/chris-profile-picture.jpg"
+                    width={150}
+                    height={150}
+                    alt="Profile picture of Chris"
                 />
             </div>
 
